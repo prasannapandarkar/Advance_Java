@@ -137,7 +137,14 @@ public class updateData extends JFrame {
         String password = "Prasanna@123";
 
         String query = "INSERT INTO "
-                + tableName + " (roll_no,std_name,sub,mark) VALUES ( "+Integer.parseInt(t2.getText().trim())+", '"+t1.getText().trim()+"','"+t3.getText().trim()+"', "+Integer.parseInt(t4.getText().trim())+" )";
+                + tableName + " (roll_no,std_name,sub,mark) VALUES ( "
+                +Integer.parseInt(t2.getText().trim())
+                +", '"+t1.getText().trim()
+                +"','"
+                +t3.getText().trim()
+                +"', "
+                +Integer.parseInt(t4.getText().trim())
+                +" )";
 
         try (
             Connection con = DriverManager.getConnection(
